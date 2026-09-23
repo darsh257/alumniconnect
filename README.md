@@ -2,6 +2,8 @@
 
 A full-stack networking platform designed to bridge the gap between students and institutional alumni. Built to facilitate mentorship, networking, and career opportunities through a modern, responsive web application.
 
+🌐 **[Live Demo: alumnibit.vercel.app](https://alumnibit.vercel.app/)**
+
 ## 📸 Screenshots
 *(See the `/screenshots` folder for a visual walkthrough of the platform, or view the complete gallery on Google Drive!)*
 
