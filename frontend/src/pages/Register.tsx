@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { GoogleLogin } from '@react-oauth/google';
 
+import { API_BASE_URL } from '../utils/api';
+
 export default function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -17,7 +19,7 @@ export default function Register() {
     setError('');
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/auth/google', {
+      const response = await fetch(`${API_BASE_URL}/auth/google`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ credential: credentialResponse.credential })
