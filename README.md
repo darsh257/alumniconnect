@@ -3,7 +3,9 @@
 A full-stack networking platform designed to bridge the gap between students and institutional alumni. Built to facilitate mentorship, networking, and career opportunities through a modern, responsive web application.
 
 ## 📸 Screenshots
-*(See the `/screenshots` folder for a visual walkthrough of the platform!)*
+*(See the `/screenshots` folder for a visual walkthrough of the platform, or view the complete gallery on Google Drive!)*
+
+👉 **[View All Screenshots on Google Drive](https://drive.google.com/drive/folders/18qNfEA5U79QIIJPs_xGC3wlKzgyjLZ8P?usp=sharing)**
 
 ### Login & Authentication
 ![Login Screen](screenshots/login.png)
