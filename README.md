@@ -9,11 +9,6 @@ A full-stack networking platform designed to bridge the gap between students and
 
 👉 **[View All Screenshots on Google Drive](https://drive.google.com/drive/folders/18qNfEA5U79QIIJPs_xGC3wlKzgyjLZ8P?usp=sharing)**
 
-### Login & Authentication
-![Login Screen](screenshots/login.png)
-
-### Student Dashboard
-![Dashboard](screenshots/dashboard.png)
 
 ## 🚀 Tech Stack
 
