@@ -20,7 +20,7 @@ export default function Events() {
     }
   }, []);
 
-  const [opportunities, setOpportunities] = useState([
+  const [opportunities, setOpportunities] = useState<any[]>([
     { id: 1, title: 'Software Engineer - New Grad 2025', company: 'Google', location: 'Bengaluru, India', type: 'Full-time', postedBy: 'Neha Sharma (Alum \'19)' },
     { id: 2, title: 'Product Management Intern', company: 'Zerodha', location: 'Remote', type: 'Internship', postedBy: 'Pooja Agarwal (Alum \'17)' },
     { id: 3, title: 'Data Scientist', company: 'Microsoft', location: 'Hyderabad, India', type: 'Full-time', postedBy: 'Rahul Verma (Alum \'15)' },
@@ -28,7 +28,7 @@ export default function Events() {
     { id: 5, title: 'UX Research Intern', company: 'Swiggy', location: 'Bengaluru, India', type: 'Internship', postedBy: 'Aryan Patel (Alum \'20)' },
   ]);
 
-  const [events, setEvents] = useState([
+  const [events, setEvents] = useState<any[]>([
     { id: 1, title: 'System Design Interview Masterclass', date: 'Oct 15, 2026', time: '6:00 PM IST', type: 'Webinar', attendees: 120, postedBy: 'Vikramaditya Roy' },
     { id: 2, title: 'Annual Alumni Meetup - Bay Area Chapter', date: 'Nov 2, 2026', time: '10:00 AM PST', type: 'In-Person', attendees: 45, postedBy: 'Alumni Association' },
     { id: 3, title: 'Resume Review Workshop', date: 'Oct 20, 2026', time: '5:00 PM IST', type: 'Virtual Workshop', attendees: 85, postedBy: 'Career Services' },

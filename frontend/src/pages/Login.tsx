@@ -51,7 +51,7 @@ export default function Login() {
           id: '123', 
           name: 'Test User', 
           email: email || 'test@example.com', 
-          role: role.toUpperCase() 
+          role: role.toUpperCase() as 'STUDENT' | 'ALUMNI' | 'ADMIN'
         });
         navigate('/dashboard');
         setLoading(false);

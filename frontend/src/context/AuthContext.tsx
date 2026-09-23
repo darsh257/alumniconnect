@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 import { fetchWithAuth } from '../utils/api';
 
 interface User {
@@ -27,6 +27,13 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     useEffect(() => {
         const loadUser = async () => {
             if (token) {
+                if (token === 'mock-token') {
+                    const storedRole = localStorage.getItem('userRole') as 'STUDENT' | 'ALUMNI' | 'ADMIN' || 'STUDENT';
+                    setUser({ id: '123', email: 'test@example.com', name: 'Test User', role: storedRole });
+                    setLoading(false);
+                    return;
+                }
+                
                 try {
                     const response = await fetchWithAuth('/auth/me');
                     if (response.ok) {

@@ -52,7 +52,7 @@ export default function Register() {
           id: '123', 
           name: name || 'New User', 
           email: email || 'test@example.com', 
-          role: role.toUpperCase() 
+          role: role.toUpperCase() as 'STUDENT' | 'ALUMNI' | 'ADMIN'
         });
         navigate('/dashboard');
         setLoading(false);
